@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    background: #bdc3c7;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 16px
+}
+#search-container{
+    text-align: center;
+    margin: 20px;
+}
+
+.search-icon{
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+#search-filter{
+    border-radius:5px;
+    height: 30px;
+    width: 300px;
+    border: none;
+    background: #ecf0f1;
+    padding: 5px;
+}
+#search-filter:focus{
+    outline: none;
+}
+
+#addRecipe {
+    position: relative;
+    font-size: 1rem;
+    padding: 8px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#addRecipe:focus{
+    outline: none;
+}
+
+#addRecipe:hover{
+    background: #ecf0f1;
+}
