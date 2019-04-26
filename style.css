@@ -58,3 +58,54 @@ header {
 #addRecipe:hover{
     background: #ecf0f1;
 }
+
+#recipes-container{
+    width: 30%;
+    margin: 20px auto;
+}
+#recipes-container div{
+    padding: 12px;
+    border: 1px solid lightgray;
+    margin: 10px 0;
+    background: #ecf0f1;
+    cursor: pointer;
+    border-radius: 8px;
+}
+#recipes-container h2{
+    margin-bottom: 10px;
+}
+
+
+
+@media only screen and (max-width: 800px){
+    #search-filter{
+        width: 80%;
+    }
+    #recipes-container{
+        width: 80%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    #recipes-container div{
+        box-sizing: border-box;
+        margin: 10px auto;
+        min-height: 100px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1024px){
+    #search-filter{
+        width: 80%;
+    }
+    #recipes-container{
+        width: 80%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    #recipes-container div{
+        box-sizing: border-box;
+        margin: 10px auto;
+        min-height: 150px;
+        width: 100%;
+    }
+}

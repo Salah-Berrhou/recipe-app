@@ -80,3 +80,26 @@ header a{
     background: #ecf0f1;
     padding: 5px;
 }
+
+#ingrediant-container div{
+    text-align: left;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 auto;
+}
+#ingrediant-container div p{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#ingrediant-container div a {
+    float: right;
+    cursor: pointer;
+}
+#ingrediant-container div a:hover{
+    color: rgb(100, 154, 172);
+}
+
+.cheaked{
+    text-decoration: line-through;
+}
