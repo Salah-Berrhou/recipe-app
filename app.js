@@ -48,14 +48,19 @@ const ingrediantRender = (recipes, recipeID) => {
         ingrediantCheacked.addEventListener('change', (e) => {
             ingrediant.completed = e.target.checked
             if(ingrediant.completed){
-                ingrediantName.classList.toggle('cheaked')
+                ingrediantName.classList.toggle('cheaked') 
             }else{
                 ingrediantName.classList.remove('cheaked')
             }
             localStorage.setItem('recipes', JSON.stringify(recipes))
-            console.log(ingrediant)
         })
-
+        // TO ADD THE SLACH LINE OVER INGREDIANT IF IT COMPLETED EVREY TIME WE OPEN THE RECIPE PAGE I CAN'T PUT IT IN A FUNCTION ??
+        if(ingrediant.completed){
+            ingrediantName.classList.toggle('cheaked') 
+        }else{
+            ingrediantName.classList.remove('cheaked')
+        }
+        // REMOVING ONE INGREDIANT
         ingrediantRemove.textContent = 'Remove'
         ingrediantRemove.addEventListener('click', (e) => {
             removeIngrediant(ingrediant.id)
@@ -82,5 +87,6 @@ const removeIngrediant = (id) => {
     let index = recipes[recipeID].ingrediant.findIndex((ingrediant) => ingrediant.id === id)
     recipes[recipeID].ingrediant.splice(index, 1)
 }
+
 
 ingrediantRender(recipes, recipeID)
